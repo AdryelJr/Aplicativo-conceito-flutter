@@ -11,8 +11,28 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Cards(),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Tarefas'),
+        backgroundColor: Color.fromARGB(255, 127, 1, 149),
+      ),
+      body: Column(
+        children: [
+          Cards(),
+          Cards(),
+          Cards(),
+          Cards(),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          print('Botão página principal');
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content:Text("Botão de soma pressionado"))
+          );
+        },
+      ),
     );
   }
 }
@@ -22,12 +42,7 @@ class Cards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Tarefas'),
-        backgroundColor: Color.fromARGB(255, 127, 1, 149),
-      ),
-      body: Stack(
+    return Stack(
         children: [
           Container(
             height: 150,
@@ -52,16 +67,6 @@ class Cards extends StatelessWidget {
             ),
           )
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: () {
-          print('Botão página principal');
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content:Text("Botão de soma pressionado"))
-          );
-        },
-      ),
-    );
+      );
   }
 }
