@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
           Cards(),
           Cards(),
           Cards(),
-          Cards(),
+          Cards()
         ],
       ),
       floatingActionButton: FloatingActionButton(
