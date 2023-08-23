@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hello_world_flutter/estado_semEstado.dart';
-
 import 'botao1.dart';
 
 void main() {
-  runApp(HomePage());
+  runApp(MaterialApp(
+    home: HomePage()
+  ));
 }
 
 class HomePage extends StatelessWidget {
@@ -20,8 +21,6 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: const [
           Cards(),
-          Cards(),
-          MyStateless(),
         ],
       ),
       floatingActionButton: FloatingActionButton(
