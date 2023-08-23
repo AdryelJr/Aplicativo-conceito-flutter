@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world_flutter/estado_semEstado.dart';
 
 import 'botao1.dart';
 
 void main() {
-  runApp(MaterialApp(
-    home: HomePage(),
-  ));
+  runApp(HomePage());
 }
 
 class HomePage extends StatelessWidget {
@@ -18,9 +17,11 @@ class HomePage extends StatelessWidget {
         title: Text('Tarefas'),
         backgroundColor: Color.fromARGB(255, 127, 1, 149),
       ),
-      body: Column(
+      body: ListView(
         children: const [
-          Cards()
+          Cards(),
+          Cards(),
+          MyStateless(),
         ],
       ),
       floatingActionButton: FloatingActionButton(
