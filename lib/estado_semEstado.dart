@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class MyStatelessWidget extends StatelessWidget {
   int data = 0;
+
+  MyStatelessWidget({super.key});
 
   void somaData() {
     if(data >= 100){
@@ -37,7 +40,10 @@ class MyStatelessWidget extends StatelessWidget {
 }
 
 class MyStatefulWidget extends StatefulWidget {
+  const MyStatefulWidget({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
 }
 
