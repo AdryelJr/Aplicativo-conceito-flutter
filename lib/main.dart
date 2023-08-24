@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world_flutter/estado_semEstado.dart';
 import 'botao1.dart';
 
 void main() {
@@ -26,7 +25,6 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () {
-          print('Botão página principal');
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text("Botão de soma pressionado")),
           );
