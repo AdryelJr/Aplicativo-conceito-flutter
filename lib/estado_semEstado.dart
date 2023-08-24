@@ -4,6 +4,10 @@ class MyStatelessWidget extends StatelessWidget {
   int data = 0;
 
   void somaData() {
+    if(data >= 100){
+      print("Contagem chegou a 100. Reiniciando...");
+      data = 0;
+    }
     data++;
     print('Botão StatelessWidget pressionado - Data: $data');
   }
@@ -42,6 +46,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
   void _handleButtonPress() {
     setState(() {
+      if(data >= 100){
+        print("Contagem chegou a 100, Reiniciando...");
+        data = 0;
+      }
       data++;
       print('Botão StatefulWidget pressionado - Data: $data');
     });
