@@ -24,7 +24,7 @@ class botoes_click extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(20),
       padding: EdgeInsets.all(40),
-      color: Color.fromARGB(255, 127, 1, 149),
+      color: Color.fromARGB(255, 75, 0, 130),
       child: Column(
         children: [
           Text(
@@ -52,13 +52,12 @@ class _botao1State extends State<botao1> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Tarefas'),
-        backgroundColor: Color.fromARGB(255, 127, 1, 149),
+        backgroundColor: Color.fromARGB(255, 75, 0, 130),
       ),
       body: ListView(
         children: [
           Container(
             width: 400,
-            height: 615,
             child: Column(
               children: [
                 MyStatelessWidget(),
@@ -67,9 +66,12 @@ class _botao1State extends State<botao1> {
               ],
             ),
           ),
+          Spacer(),
           Container(
             height: 80,
             color: Color.fromARGB(255, 224, 224, 224),
+
+            
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -80,7 +82,7 @@ class _botao1State extends State<botao1> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 127, 1, 149),
+                    primary: Color.fromARGB(255, 75, 0, 130),
                   ),
                   child: Icon(Icons.home),
                 ),
@@ -91,7 +93,7 @@ class _botao1State extends State<botao1> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 127, 1, 149),
+                    primary: Color.fromARGB(255, 75, 0, 130),
                   ),
                   child: Icon(Icons.apple),
                 ),
@@ -102,7 +104,7 @@ class _botao1State extends State<botao1> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 127, 1, 149),
+                    primary: Color.fromARGB(255, 75, 0, 130),
                   ),
                   child: Icon(Icons.bookmark_add),
                 ),

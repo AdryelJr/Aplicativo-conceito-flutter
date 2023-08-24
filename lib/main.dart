@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Tarefas'),
-        backgroundColor: Color.fromARGB(255, 127, 1, 149),
+        backgroundColor: Color.fromARGB(255, 75, 0, 130),
       ),
       body: ListView(
         children: const [
@@ -44,7 +44,7 @@ class Cards extends StatelessWidget {
         Container(
           height: 150,
           width: 1000,
-          color: Color.fromARGB(255, 127, 1, 149),
+          color: Color.fromARGB(255, 75, 0, 130),
         ),
         Container(
           height: 110,
@@ -56,7 +56,7 @@ class Cards extends StatelessWidget {
               Container(
                 height: 70,
                 width: 70,
-                color: Color.fromARGB(255, 127, 1, 149),
+                color: Color.fromARGB(255, 75, 0, 130),
               ),
               Text("Primeira tarefa"),
               ElevatedButton(

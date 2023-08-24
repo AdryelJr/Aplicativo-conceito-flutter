@@ -17,7 +17,7 @@ class MyStatelessWidget extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(30),
       padding: EdgeInsets.all(52),
-      color: Color.fromARGB(255, 127, 1, 149),
+      color: Color.fromARGB(255, 75, 0, 130),
       child: Column(
         children: [
           Text(
@@ -60,7 +60,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     return Container(
       margin: EdgeInsets.all(20),
       padding: EdgeInsets.all(55),
-      color: Color.fromARGB(255, 127, 1, 149),
+      color: Color.fromARGB(255, 75, 0, 130),
       child: Column(
         children: [
           Text(
