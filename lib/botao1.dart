@@ -70,8 +70,6 @@ class _botao1State extends State<botao1> {
           Container(
             height: 80,
             color: Color.fromARGB(255, 224, 224, 224),
-
-            
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
