@@ -20,7 +20,7 @@ class MyStatelessWidget extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(30),
       padding: EdgeInsets.all(52),
-      color: Color.fromARGB(255, 75, 0, 130),
+      color: Color(0xFF0A6D92),
       child: Column(
         children: [
           Text(
@@ -32,6 +32,9 @@ class MyStatelessWidget extends StatelessWidget {
           ElevatedButton(
             onPressed: somaData,
             child: Text('Pressione - Stateless'),
+            style: ElevatedButton.styleFrom(
+              primary: Color.fromARGB(197, 255, 153, 0),
+            ),
           ),
         ],
       ),
@@ -66,7 +69,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     return Container(
       margin: EdgeInsets.all(20),
       padding: EdgeInsets.all(55),
-      color: Color.fromARGB(255, 75, 0, 130),
+      color: Color(0xFF0A6D92),
       child: Column(
         children: [
           Text(
@@ -78,6 +81,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           ElevatedButton(
             onPressed: _handleButtonPress,
             child: Text('Pressione - Stateful'),
+            style: ElevatedButton.styleFrom(
+              primary: Color.fromARGB(197, 255, 153, 0),
+            ),
           ),
         ],
       ),

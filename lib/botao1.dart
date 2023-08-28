@@ -24,7 +24,7 @@ class botoes_click extends StatelessWidget {
     return Container(
       margin: EdgeInsets.all(20),
       padding: EdgeInsets.all(40),
-      color: Color.fromARGB(255, 75, 0, 130),
+      color: Color(0xFF0A6D92),
       child: Column(
         children: [
           Text(
@@ -51,8 +51,10 @@ class _botao1State extends State<botao1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tarefas'),
-        backgroundColor: Color.fromARGB(255, 75, 0, 130),
+        title: Text('Tarefas', style: TextStyle(fontWeight: FontWeight.bold),),
+        backgroundColor: Color(0xFF0A6D92),
+        toolbarHeight: 65,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(25))),
       ),
       body: ListView(
         children: [
@@ -80,7 +82,7 @@ class _botao1State extends State<botao1> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 75, 0, 130),
+                    primary: Color(0xFF0A6D92),
                   ),
                   child: Icon(Icons.home),
                 ),
@@ -91,7 +93,7 @@ class _botao1State extends State<botao1> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 75, 0, 130),
+                    primary: Color(0xFF0A6D92),
                   ),
                   child: Icon(Icons.apple),
                 ),
@@ -102,7 +104,7 @@ class _botao1State extends State<botao1> {
                     });
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Color.fromARGB(255, 75, 0, 130),
+                    primary: Color(0xFF0A6D92),
                   ),
                   child: Icon(Icons.bookmark_add),
                 ),
