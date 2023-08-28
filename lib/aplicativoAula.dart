@@ -46,7 +46,7 @@ class Tarefa extends StatelessWidget {
         ),
         Container(
           height: 100,
-          color: Colors.black,
+          color: const Color.fromARGB(255, 196, 107, 107),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
