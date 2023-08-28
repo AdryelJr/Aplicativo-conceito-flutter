@@ -29,7 +29,7 @@ class botoes_click extends StatelessWidget {
         children: [
           Text(
             'Botão clicado: $qualBotao',
-            style: TextStyle(fontSize: 20 ,color: Colors.white),
+            style: TextStyle(fontSize: 20, color: Colors.white),
           ),
         ],
       ),
@@ -51,10 +51,14 @@ class _botao1State extends State<botao1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Tarefas', style: TextStyle(fontWeight: FontWeight.bold),),
+        title: Text(
+          'Tarefas botão 1',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
         backgroundColor: Color(0xFF0A6D92),
         toolbarHeight: 65,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(25))),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(bottom: Radius.circular(25))),
       ),
       body: ListView(
         children: [
@@ -68,13 +72,18 @@ class _botao1State extends State<botao1> {
               ],
             ),
           ),
-          Spacer(),
           Container(
             height: 80,
-            color: Color.fromARGB(255, 224, 224, 224),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            margin: EdgeInsets.fromLTRB(56, 0, 0, 0),
+            padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.horizontal(left: Radius.circular(30)),
+              color: Color.fromARGB(223, 227, 137, 2),
+            ),
+            child: ListView(
+              scrollDirection: Axis.horizontal,
               children: [
+                SizedBox(width: 20),
                 ElevatedButton(
                   onPressed: () {
                     setState(() {
@@ -83,9 +92,15 @@ class _botao1State extends State<botao1> {
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Color(0xFF0A6D92),
+                    shape: CircleBorder(),
+                    padding: EdgeInsets.all(14),
                   ),
-                  child: Icon(Icons.home),
+                  child: Icon(
+                    Icons.home,
+                    size: 32,
+                  ),
                 ),
+                SizedBox(width: 30),
                 ElevatedButton(
                   onPressed: () {
                     setState(() {
@@ -94,20 +109,49 @@ class _botao1State extends State<botao1> {
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Color(0xFF0A6D92),
+                    shape: CircleBorder(),
+                    padding: EdgeInsets.all(14),
                   ),
-                  child: Icon(Icons.apple),
+                  child: Icon(
+                    Icons.apple,
+                    size: 32,
+                  ),
                 ),
+                SizedBox(width: 30),
                 ElevatedButton(
                   onPressed: () {
                     setState(() {
-                      qualBotao = "Salvar";
+                      qualBotao = "Música";
                     });
                   },
                   style: ElevatedButton.styleFrom(
                     primary: Color(0xFF0A6D92),
+                    shape: CircleBorder(),
+                    padding: EdgeInsets.all(14),
                   ),
-                  child: Icon(Icons.bookmark_add),
+                  child: Icon(
+                    Icons.music_note,
+                    size: 32,
+                  ),
                 ),
+                SizedBox(width: 30),
+                ElevatedButton(
+                  onPressed: () {
+                    setState(() {
+                      qualBotao = "Perfil";
+                    });
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Color(0xFF0A6D92),
+                    shape: CircleBorder(),
+                    padding: EdgeInsets.all(14),
+                  ),
+                  child: Icon(
+                    Icons.account_box,
+                    size: 32,
+                  ),
+                ),
+                SizedBox(width: 30),
               ],
             ),
           ),

@@ -52,6 +52,10 @@ class HomePage extends StatelessWidget {
             Cards(
               titulo: "Segunda tarefa",
             ),
+            SizedBox(
+              height: 8,
+            ),
+            Cards(titulo: "Terceira tarefa")
           ],
         ),
       ),
