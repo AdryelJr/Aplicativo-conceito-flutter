@@ -56,9 +56,9 @@ class _botao1State extends State<botao1> {
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
         backgroundColor: Color(0xFF0A6D92),
-        toolbarHeight: 65,
+        toolbarHeight: 70,
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(bottom: Radius.circular(25))),
+            borderRadius: BorderRadius.vertical(bottom: Radius.circular(30))),
       ),
       body: ListView(
         children: [
@@ -67,92 +67,98 @@ class _botao1State extends State<botao1> {
             child: Column(
               children: [
                 MyStatelessWidget(),
+              
+
                 MyStatefulWidget(),
                 botoes_click(qualBotao),
               ],
             ),
           ),
-          Container(
-            height: 80,
-            margin: EdgeInsets.fromLTRB(56, 0, 0, 0),
-            padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.horizontal(left: Radius.circular(30)),
-              color: Color.fromARGB(223, 227, 137, 2),
-            ),
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                SizedBox(width: 20),
-                ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      qualBotao = "Home";
-                    });
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF0A6D92),
-                    shape: CircleBorder(),
-                    padding: EdgeInsets.all(14),
+          
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              height: 80,
+              margin: EdgeInsets.fromLTRB(56, 0, 0, 0),
+              padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.horizontal(left: Radius.circular(30)),
+                color: Color.fromARGB(223, 227, 137, 2),
+              ),
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  SizedBox(width: 20),
+                  ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        qualBotao = "Home";
+                      });
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Color(0xFF0A6D92),
+                      shape: CircleBorder(),
+                      padding: EdgeInsets.all(14),
+                    ),
+                    child: Icon(
+                      Icons.home,
+                      size: 32,
+                    ),
                   ),
-                  child: Icon(
-                    Icons.home,
-                    size: 32,
+                  SizedBox(width: 30),
+                  ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        qualBotao = "Apple";
+                      });
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Color(0xFF0A6D92),
+                      shape: CircleBorder(),
+                      padding: EdgeInsets.all(14),
+                    ),
+                    child: Icon(
+                      Icons.apple,
+                      size: 32,
+                    ),
                   ),
-                ),
-                SizedBox(width: 30),
-                ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      qualBotao = "Apple";
-                    });
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF0A6D92),
-                    shape: CircleBorder(),
-                    padding: EdgeInsets.all(14),
+                  SizedBox(width: 30),
+                  ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        qualBotao = "Música";
+                      });
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Color(0xFF0A6D92),
+                      shape: CircleBorder(),
+                      padding: EdgeInsets.all(14),
+                    ),
+                    child: Icon(
+                      Icons.music_note,
+                      size: 32,
+                    ),
                   ),
-                  child: Icon(
-                    Icons.apple,
-                    size: 32,
+                  SizedBox(width: 30),
+                  ElevatedButton(
+                    onPressed: () {
+                      setState(() {
+                        qualBotao = "Perfil";
+                      });
+                    },
+                    style: ElevatedButton.styleFrom(
+                      primary: Color(0xFF0A6D92),
+                      shape: CircleBorder(),
+                      padding: EdgeInsets.all(14),
+                    ),
+                    child: Icon(
+                      Icons.account_box,
+                      size: 32,
+                    ),
                   ),
-                ),
-                SizedBox(width: 30),
-                ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      qualBotao = "Música";
-                    });
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF0A6D92),
-                    shape: CircleBorder(),
-                    padding: EdgeInsets.all(14),
-                  ),
-                  child: Icon(
-                    Icons.music_note,
-                    size: 32,
-                  ),
-                ),
-                SizedBox(width: 30),
-                ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-                      qualBotao = "Perfil";
-                    });
-                  },
-                  style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF0A6D92),
-                    shape: CircleBorder(),
-                    padding: EdgeInsets.all(14),
-                  ),
-                  child: Icon(
-                    Icons.account_box,
-                    size: 32,
-                  ),
-                ),
-                SizedBox(width: 30),
-              ],
+                  SizedBox(width: 30),
+                ],
+              ),
             ),
           ),
         ],

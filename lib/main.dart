@@ -9,7 +9,6 @@ void main() {
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,9 +30,9 @@ class HomePage extends StatelessWidget {
         backgroundColor:
             Color(0xFF0A6D92), //0xFF + codigo da cor (Color(0xFF0A6D92))
         elevation: 2, //sombra
-        toolbarHeight: 65,
+        toolbarHeight: 70,
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.vertical(bottom: Radius.circular(25))),
+            borderRadius: BorderRadius.vertical(bottom: Radius.circular(30))),
       ),
       body: Container(
         padding: EdgeInsets.all(8),
@@ -55,7 +54,7 @@ class HomePage extends StatelessWidget {
             SizedBox(
               height: 8,
             ),
-            Cards(titulo: "Terceira tarefa")
+            Cards(titulo: "Terceira tarefa"),
           ],
         ),
       ),

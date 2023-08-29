@@ -12,13 +12,13 @@ class botao2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Tarefa botão 2')),
+      appBar: AppBar(title: Text('Tarefas botão 2')),
       body: Container(
         color: Colors.green,
         child: Center(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
+            children: const[
               Text("Página 2 em construção", style: TextStyle(color: Colors.white, fontSize: 30),),
             ],
           ),
