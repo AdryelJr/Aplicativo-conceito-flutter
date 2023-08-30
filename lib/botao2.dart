@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +22,9 @@ class botao2 extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: const[
               Text("Página 2 em construção", style: TextStyle(color: Colors.white, fontSize: 30),),
+              
             ],
+            
           ),
         ),
       ),
