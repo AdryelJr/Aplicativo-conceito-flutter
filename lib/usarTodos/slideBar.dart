@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hello_world_flutter/botao1.dart';
 import 'package:hello_world_flutter/botao2.dart';
 
+import '../Cronometro.dart';
 import '../main.dart';
 
 class MeuMenu extends StatelessWidget {
@@ -53,6 +54,16 @@ class MeuMenu extends StatelessWidget {
               context,
               MaterialPageRoute(builder: (BuildContext context) {
                 return botao1();
+              }),
+            ),
+          ),
+          ListTile(
+            leading: Icon(Icons.timer),
+            title: Text('Cronômetro'),
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (BuildContext context) {
+                return MyCronometro();
               }),
             ),
           ),
