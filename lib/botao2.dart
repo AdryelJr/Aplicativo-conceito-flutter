@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:hello_world_flutter/usarTodos/slideBar.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -14,6 +15,7 @@ class botao2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: MeuMenu(),
       appBar: AppBar(title: Text('Tarefas botão 2')),
       body: Container(
         color: Colors.green,

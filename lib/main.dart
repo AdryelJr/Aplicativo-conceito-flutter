@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world_flutter/usarTodos/slideBar.dart';
 import 'botao1.dart';
 import 'botao2.dart';
 
@@ -13,6 +14,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: MeuMenu(),
       appBar: AppBar(
         title: Column(
           children: const [
