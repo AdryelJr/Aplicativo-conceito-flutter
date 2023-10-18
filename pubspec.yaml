@@ -1,3 +1,10 @@
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^latest_version
+  firebase_auth: ^latest_version
+  # Adicione outras dependências do Firebase conforme necessário
+
 name: hello_world_flutter
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
